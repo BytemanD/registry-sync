@@ -30,8 +30,8 @@ jobs:
 
     - name: 推送镜像 python 镜像
       run: |
-        sh src/sync.sh data/python.txt
+        bash src/sync.sh data/python.txt
 
     - name: 推送镜像 k8s 镜像
       run: |
-        sh src/sync.sh data/k8s.txt
+        bash src/sync.sh data/k8s.txt
