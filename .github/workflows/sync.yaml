@@ -16,6 +16,10 @@ jobs:
         echo "系统版本:" $(uname -a)
         echo "发行版本:" $(cat /etc/os-release)
         echo "docker 版本:" $(docker --version)
+    - name: 拉取项目代码
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
     - name: 登录阿里云镜像仓库
       uses: docker/login-action@v1
